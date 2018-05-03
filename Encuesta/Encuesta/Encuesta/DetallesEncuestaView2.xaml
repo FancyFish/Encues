@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Encuesta.DetallesEncuestaView">
+    <Grid>
+        <RowDefinition></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <StackLayout>
+            <Label Text="Nombre"></Label>
+            <Entry Placeholder="Ingrese su nombre" x:Name="EnNombre"></Entry>
+            <Label Text="Fecha de nacimiento"></Label>
+            <DatePicker x:Name="DtNac"></DatePicker>
+            <Label Text="Equipo Favorito"></Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="LbEquipoFav"></Label>
+                <Button x:Name="BtAgregarEq" Grid.Column="1" Text="..."></Button>
+            </Grid>
+        </StackLayout>
+        <Button Grid.Row="1" Text="Agregar" x:Name="BtnAccept"></Button>
+    </Grid>
+</ContentPage>
